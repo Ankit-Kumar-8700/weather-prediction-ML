@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+    <link rel="icon" href="../static/logo.png" type="image/png">
+</head>
+<body>
+    <div class="outerbody"></div>
+        <div class="innerbody">
+            <div class="innerbody2">
+            <div class="heading">Result</div>
+            <hr>
+            {% if image %}
+                <div class="result">Weather Predicted<br><img src="/static/{{image}}.png" alt="{{image}}.png"><br>{{image}}</div>
+            {% else %}
+                <div class="result">Kindly Fill the form appropriately..</div>
+            {% endif %}
+            <div class="close">
+                <a href="/">Close</a>
+            </div>
+            </div>
+        </div>
+    
+</body>
+</html>
